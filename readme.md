@@ -3,8 +3,9 @@
 #### Abstraindo programação JavaScript
 Criação de métodos independentes, para deixar código mais escalável e posteriormente transformar em uma biblioteca.
 
+Biblioteca desabilita campos do formulário enquanto dados são enviados, e após isso limpa o formulário e colocar o focus no primeiro campo.
+
 <img border="3" src="src/images/prints/1-form.png">
-<img border="3" src="src/images/prints/2-form.png">
 
 
 ## Passo a Passo 
