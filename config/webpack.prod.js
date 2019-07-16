@@ -7,11 +7,11 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 /*exportar um objeto*/
 module.exports = merge(dev, {
-    plugins: [
-        /*Objeto de configuração*/
-        new UglifyJsPlugin({
-            /*Expressão regular, para localizar apenas arquivos javascript*/
-            test: /\.js($|\?)/i
-        })
-    ]
+  plugins: [
+    /*Objeto de configuração*/
+    new UglifyJsPlugin({
+      /*Expressão regular, para localizar apenas arquivos javascript*/
+      test: /\.js($|\?)/i
+    })
+  ]
 });

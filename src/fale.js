@@ -1,7 +1,11 @@
 /* Para simplificar, vamos usar o ES2015 e extrair do objeto retornado todas as propriedades informadas,
  * e elas se tornarão constantes dentro do fale.js.
  * Assim se torna desnecessário chamar os métodos com o formlib antes (ex.: formlib.getElements()) */
+
 // var formlib = require('./lib/formlib');
+/**
+ * Importar métodos com ES2015, extraindo todas as propriedades do objeto retornado,
+ * e elas se tornarão const dentro deste arquivo **/
 const {getElements, getPayload, clearPayload, setDisabled, clearForm} = require('./lib/formlib');
 
 
@@ -11,7 +15,7 @@ var elementIds = ['contact', 'name', 'email', 'phone', 'website', 'message', 'su
 var elements = getElements(elementIds);
 
 
-/* Preencher o formulário */
+/* Chamar método utilitário para preencher o formulário */
 fill();
 
 function fill() {
